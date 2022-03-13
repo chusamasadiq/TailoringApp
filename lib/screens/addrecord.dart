@@ -153,11 +153,10 @@ class _AddRecordState extends State<AddRecord> {
                     ),
 
               CustomeSizedBox(height: 20),
-              new Text(
-                'Lion is :',
-                style: new TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18.0,
+              Text(
+                'فرنٹ',
+                style: TextStyle(
+                  fontSize: 20,
                 ),
               )
               ,
@@ -170,7 +169,7 @@ class _AddRecordState extends State<AddRecord> {
                       onChanged: _handleRadioValueChange1,
                     ),
                     Text(
-                      'Carnivore',
+                      'ہاں',
                       style: new TextStyle(fontSize: 16.0),
                     ),
                     new Radio(
@@ -179,22 +178,48 @@ class _AddRecordState extends State<AddRecord> {
                       onChanged: _handleRadioValueChange1,
                     ),
                     Text(
-                      'Herbivore',
+                      'نہیں',
                       style: new TextStyle(
                         fontSize: 16.0,
                       ),
                     ),
-                    Radio(
-                      value: 2,
-                      groupValue: _radioValue1,
-                      onChanged: _handleRadioValueChange1,
-                    ),
-                    Text(
-                      'Omnivore',
-                      style: new TextStyle(fontSize: 16.0),
-                    ),
+
                 ]
               ),
+                    Text(
+                      'سائیڈ',
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+
+                    Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Radio(
+                            value: 0,
+                            groupValue: _radioValue1,
+                            onChanged: _handleRadioValueChange1,
+                          ),
+                          Text(
+                            'ہاں',
+                            style: new TextStyle(fontSize: 16.0),
+                          ),
+                          new Radio(
+                            value: 1,
+                            groupValue: _radioValue1,
+                            onChanged: _handleRadioValueChange1,
+                          ),
+                          Text(
+                            'نہیں',
+                            style: new TextStyle(
+                              fontSize: 16.0,
+                            ),
+                          ),
+
+                        ]
+                    ),
+
 
                     CustomeSizedBox(height: 20),
                     SizedBox(
